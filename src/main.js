@@ -3,7 +3,7 @@
 import "babel-polyfill"//3-1转译es6的api，写在最前面，引入开发依赖
 import Vue from 'vue'
 import App from './App'
-// import router from './router'
+import router from './router'//3-2引用./router里面的实例
 import fastclick from "fastclick"//3-1引入依赖
 
 Vue.config.productionTip = false
@@ -18,7 +18,7 @@ fastclick.attach(document.body)//3-1解决移动端点击事件300ms延迟
 /* eslint-disable no-new */
 new Vue({
   el: '#app',//把el即元素挂载到#app上
-  // router,
+  router,//3-2挂载router
   components: { App },
   template: '<App/>'
 })
