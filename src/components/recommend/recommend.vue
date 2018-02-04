@@ -1,5 +1,5 @@
 <template>
-	<div class="recommend">
+	<div class="recommend" ref="recommend">
 		<!-- 4-3-008搭建骨架 -->
 		<div class="recommend-content">
 			<div class="slider-wrapper" v-if="recommends.length">
@@ -71,6 +71,10 @@
 		.recommend-content
 			height:100%
 			overflow:hidden
+			.slider-wrapper
+				position:relative
+				width:100%
+				overflow:hidden
 			.recommend-list
 				.list-title
 					height:65px
