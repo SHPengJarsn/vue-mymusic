@@ -28,7 +28,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),//项目中用的是src
       "src":resolve("src"),//这里的resolve是一个函数，在第7行
-      "common":resolve("src/common")
+      "common":resolve("src/common"),
+      "components":resolve("src/components")
     }
   },
   module: {
